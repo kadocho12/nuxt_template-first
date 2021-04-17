@@ -15,9 +15,7 @@
           <picture class="membership-intro-fig-img">
             <source
               type="image/webp"
-              srcset="
-                /imgs/page/seminar/amitysensei-seminar-membership.jpg.webp
-              "
+              srcset="/imgs/page/seminar/amitysensei-top-kv-icon.jpg"
             />
             <img
               src="/imgs/page/seminar/amitysensei-seminar-membership.jpg"
@@ -34,7 +32,7 @@
                 <picture class="membership-yt-ch-fig-img">
                   <source
                     type="image/webp"
-                    srcset="/imgs/amitysensei-ch-icon.jpg.webp"
+                    srcset="/imgs/page/top/instagram.svg"
                     loading="lazy"
                   />
                   <img
@@ -107,9 +105,7 @@
               <picture class="membership-yt-fig-img">
                 <source
                   type="image/webp"
-                  srcset="
-                    /imgs/page/seminar/amitysensei-seminar-membership-1.jpg.webp
-                  "
+                  srcset="/imgs/page/seminar/amitysensei-top-kv-icon.jpg"
                 />
                 <img
                   src="/imgs/page/seminar/amitysensei-seminar-membership-1.jpg"
@@ -122,9 +118,7 @@
               <picture class="membership-yt-fig-img">
                 <source
                   type="image/webp"
-                  srcset="
-                    /imgs/page/seminar/amitysensei-seminar-membership-2.jpg.webp
-                  "
+                  srcset="/imgs/page/seminar/amitysensei-top-kv-icon.jpg"
                 />
                 <img
                   src="/imgs/page/seminar/amitysensei-seminar-membership-2.jpg"

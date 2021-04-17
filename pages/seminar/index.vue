@@ -71,47 +71,47 @@ export default {
         {
           rel: 'preload',
           href:
-            'https://amitysensei.com/imgs/page/seminar/amitysensei-seminar-membership.jpg.webp',
+            'https://amitysensei.com/imgs/page/seminar/amitysensei-top-kv-icon.jpg',
           as: 'image',
         },
         {
           rel: 'preload',
           href:
-            'https://amitysensei.com/imgs/page/seminar/amitysensei-seminar-membership.jpg',
+            'https://amitysensei.com/imgs/page/seminar/amitysensei-top-kv-icon.jpg',
           as: 'image',
         },
         {
           rel: 'preload',
-          href: 'https://amitysensei.com/imgs/amitysensei-ch-icon.jpg.webp',
+          href: 'https://amitysensei.com/imgs/amitysensei-top-kv-icon.jpg',
           as: 'image',
         },
         {
           rel: 'preload',
-          href: 'https://amitysensei.com/imgs/amitysensei-ch-icon.jpg',
-          as: 'image',
-        },
-        {
-          rel: 'preload',
-          href:
-            'https://amitysensei.com/imgs/page/seminar/amitysensei-seminar-membership-1.jpg.webp',
+          href: 'https://amitysensei.com/imgs/amitysensei-top-kv-icon.jpg',
           as: 'image',
         },
         {
           rel: 'preload',
           href:
-            'https://amitysensei.com/imgs/page/seminar/amitysensei-seminar-membership-1.jpg',
+            'https://amitysensei.com/imgs/page/seminar/amitysensei-top-kv-icon.jpg',
           as: 'image',
         },
         {
           rel: 'preload',
           href:
-            'https://amitysensei.com/imgs/page/seminar/amitysensei-seminar-membership-2.jpg.webp',
+            'https://amitysensei.com/imgs/page/seminar/amitysensei-top-kv-icon.jpg',
           as: 'image',
         },
         {
           rel: 'preload',
           href:
-            'https://amitysensei.com/imgs/page/seminar/amitysensei-seminar-membership-2.jpg',
+            'https://amitysensei.com/imgs/page/seminar/amitysensei-top-kv-icon.jpg',
+          as: 'image',
+        },
+        {
+          rel: 'preload',
+          href:
+            'https://amitysensei.com/imgs/page/seminar/amitysensei-top-kv-icon.jpg',
           as: 'image',
         },
       ],

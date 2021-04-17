@@ -6,7 +6,7 @@
         <picture class="prof-fig-img">
           <source
             type="image/webp"
-            srcset="/imgs/page/about/amitysensei-about-prof.jpg.webp"
+            srcset="/imgs/page/about/amitysensei-top-kv-icon.jpg"
           />
           <img
             src="/imgs/page/about/amitysensei-about-prof.jpg"

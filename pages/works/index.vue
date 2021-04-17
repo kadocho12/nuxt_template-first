@@ -20,7 +20,10 @@
 export default {
   data() {
     return {
-      newses: [],
+      newses: {
+        source_url: '/imgs/page/top/work-thumb.jpg',
+        text: 'あ',
+      },
       udemy: [],
       works: [
         // Book

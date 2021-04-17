@@ -66,7 +66,7 @@ export default {
         {
           rel: 'preload',
           href:
-            'https://amitysensei.com/imgs/page/about/amitysensei-about-prof.jpg.webp',
+            'https://amitysensei.com/imgs/page/about/amitysensei-top-kv-icon.jpg',
           as: 'image',
         },
         {

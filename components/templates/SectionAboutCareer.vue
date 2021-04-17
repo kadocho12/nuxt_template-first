@@ -16,7 +16,7 @@
           <picture class="career-history-fig-img js-scroll">
             <source
               type="image/webp"
-              srcset="/imgs/page/about/amitysensei-about-career-1.jpg.webp"
+              srcset="/imgs/page/about/amitysensei-top-kv-icon.jpg"
               loading="lazy"
             />
             <img
@@ -30,7 +30,7 @@
           <picture class="career-history-fig-img js-scroll">
             <source
               type="image/webp"
-              srcset="/imgs/page/about/amitysensei-about-career-2.jpg.webp"
+              srcset="/imgs/page/about/amitysensei-top-kv-icon.jpg"
               loading="lazy"
             />
             <img

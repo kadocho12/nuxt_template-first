@@ -47,7 +47,7 @@ export default {
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: url('/imgs/page/top/amitysensei-top-seminar.jpg');
+      background-image: url('/imgs/page/top/amitysensei-top-kv-icon.jpg');
       background-position: center;
       background-size: cover;
     }

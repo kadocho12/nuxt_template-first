@@ -4,7 +4,7 @@
       <picture class="prof-fig-img">
         <!-- <source
           type="image/webp"
-          srcset="/imgs/amitysensei-icon.jpg.webp"
+          srcset="/imgs/amitysensei-top-kv-icon.jpg
           loading="lazy"
         /> -->
         <img

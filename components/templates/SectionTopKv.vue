@@ -11,12 +11,12 @@
         src="/imgs/page/top/amitysensei-top-kv-icon.jpg"
         alt=""
       />
-      <video id="kv-video" class="video" autoplay muted playsinline>
+      <!-- <video id="kv-video" class="video" autoplay muted playsinline>
         <source src="/imgs/page/top/amitysensei-top-kv-icon.mp4.webm" />
         <source src="/imgs/page/top/amitysensei-top-kv-icon.mp4" />
         <source src="/imgs/page/top/amitysensei-top-kv-icon.mov" />
         <p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
-      </video>
+      </video> -->
     </div>
   </section>
 </template>
@@ -60,7 +60,7 @@ export default {
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: url('/imgs/page/top/amitysensei-top-kv.jpg');
+      background-image: url('/imgs/page/top/amitysensei-top-kv-icon.jpg');
       background-position: center;
       background-size: cover;
 

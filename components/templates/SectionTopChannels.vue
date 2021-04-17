@@ -5,7 +5,7 @@
         <picture class="ch-fig-img">
           <source
             type="image/webp"
-            srcset="/imgs/page/top/amitysensei-top-ch.jpg.webp"
+            srcset="/imgs/page/top/amitysensei-top-kv-icon.jpg"
             loading="lazy"
           />
           <img

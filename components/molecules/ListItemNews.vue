@@ -1,20 +1,21 @@
 <template>
   <li class="list-item list-item-news">
+    <img :src="news.source_url" alt="" />
     <nuxt-link :to="`/news/${news.slug}/`" class="news-link">
-      <figure class="news-fig">
+      <!-- <figure class="news-fig">
         <picture class="news-fig-img">
           <source
             type="image/webp"
-            :srcset="news._embedded['wp:featuredmedia'][0].source_url + '.webp'"
+            :srcset="news.source_url + '.webp'"
             loading="lazy"
           />
           <img
-            :src="news._embedded['wp:featuredmedia'][0].source_url"
+            :src="news.source_url"
             :alt="news.title.rendered"
             loading="lazy"
           />
         </picture>
-      </figure>
+      </figure> -->
       <div class="news-info">
         <h3 class="news-ttl font-500">
           {{ news.title.rendered }}
