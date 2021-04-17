@@ -5,6 +5,12 @@
       <div class="bg-img"></div>
     </div>
     <div class="container">
+      <img
+        id="kv-video"
+        class="video"
+        src="/imgs/page/top/amitysensei-top-kv-icon.jpg"
+        alt=""
+      />
       <video id="kv-video" class="video" autoplay muted playsinline>
         <source src="/imgs/page/top/amitysensei-top-kv-icon.mp4.webm" />
         <source src="/imgs/page/top/amitysensei-top-kv-icon.mp4" />

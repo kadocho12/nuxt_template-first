@@ -2,11 +2,11 @@
   <div class="content content-prof-simple">
     <figure class="prof-fig">
       <picture class="prof-fig-img">
-        <source
+        <!-- <source
           type="image/webp"
           srcset="/imgs/amitysensei-icon.jpg.webp"
           loading="lazy"
-        />
+        /> -->
         <img
           src="/imgs/amitysensei-icon.jpg"
           alt="amity_sensei"
