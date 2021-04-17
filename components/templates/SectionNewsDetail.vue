@@ -3,13 +3,9 @@
     <div class="container">
       <figure class="news-fig">
         <picture class="news-fig-img">
-          <source
-            type="image/webp"
-            :srcset="news._embedded['wp:featuredmedia'][0].source_url + '.webp'"
-            loading="lazy"
-          />
+          <source :srcset="img" loading="lazy" />
           <img
-            :src="news._embedded['wp:featuredmedia'][0].source_url"
+            :src="img"
             :alt="`${news.title.rendered}のサムネイル画像`"
             loading="lazy"
           />
@@ -32,6 +28,10 @@ export default {
     news: {
       type: Object,
       required: true,
+    },
+    img: {
+      type: Object,
+      default: () => ({}),
     },
   },
 }

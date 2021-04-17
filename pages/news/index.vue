@@ -6,11 +6,16 @@
 
 <script>
 export default {
-  async asyncData({ store }) {
-    await store.dispatch('news/getNewses')
+  // async asyncData({ store }) {
+  //   await store.dispatch('news/getNewses')
 
+  //   return {
+  //     newses: store.getters['news/newses'],
+  //   }
+  // },
+  data() {
     return {
-      newses: store.getters['news/newses'],
+      newses: [],
     }
   },
   head() {

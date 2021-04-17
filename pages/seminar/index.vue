@@ -8,11 +8,9 @@
 
 <script>
 export default {
-  async asyncData({ store }) {
-    await store.dispatch('udemy/getUdemy')
-
+  data() {
     return {
-      udemy: store.getters['udemy/udemy'],
+      udemy: [],
     }
   },
   head() {
