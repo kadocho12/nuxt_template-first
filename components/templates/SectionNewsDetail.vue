@@ -3,9 +3,8 @@
     <div class="container">
       <figure class="news-fig">
         <picture class="news-fig-img">
-          <source :srcset="img" loading="lazy" />
           <img
-            :src="img"
+            :src="news.img.img"
             :alt="`${news.title.rendered}のサムネイル画像`"
             loading="lazy"
           />
@@ -28,10 +27,6 @@ export default {
     news: {
       type: Object,
       required: true,
-    },
-    img: {
-      type: Object,
-      default: () => ({}),
     },
   },
 }

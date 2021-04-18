@@ -17,12 +17,12 @@
         </picture>
       </figure> -->
       <div class="news-info">
-        <h3 class="news-ttl font-500">
+        <!-- <h3 class="news-ttl font-500">
           {{ news.title.rendered }}
         </h3>
         <time class="news-time font-futura">
           {{ $dayjs(news.date).format('YYYY.MM.DD') }}
-        </time>
+        </time> -->
       </div>
     </nuxt-link>
   </li>

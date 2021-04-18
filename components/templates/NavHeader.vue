@@ -2,9 +2,7 @@
   <header v-bind="$attrs" class="nav nav-header no-max">
     <div class="container">
       <nuxt-link aria-label="TOP" to="/" class="logo js-header-logo">
-        <svg viewBox="0 0 166 56" class="logo-img">
-          <use xlink:href="#i-logo" />
-        </svg>
+        <img src="/imgs/logo.png" class="logo js-header-logo" alt="" />
       </nuxt-link>
       <button
         aria-label="hamburger menu"

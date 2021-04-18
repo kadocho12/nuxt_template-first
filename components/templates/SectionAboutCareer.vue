@@ -14,11 +14,6 @@
         </div>
         <figure class="career-history-fig career-history-fig-1">
           <picture class="career-history-fig-img js-scroll">
-            <source
-              type="image/webp"
-              srcset="/imgs/page/about/amitysensei-top-kv-icon.jpg"
-              loading="lazy"
-            />
             <img
               src="/imgs/page/about/amitysensei-about-career-1.jpg"
               alt="amity_senseiの画像１"
@@ -28,11 +23,6 @@
         </figure>
         <figure class="career-history-fig career-history-fig-2">
           <picture class="career-history-fig-img js-scroll">
-            <source
-              type="image/webp"
-              srcset="/imgs/page/about/amitysensei-top-kv-icon.jpg"
-              loading="lazy"
-            />
             <img
               src="/imgs/page/about/amitysensei-about-career-2.jpg"
               alt="amity_senseiの画像２"

@@ -63,12 +63,12 @@ export default {
           rel: 'canonical',
           href: 'https://amitysensei.com/about/',
         },
-        {
-          rel: 'preload',
-          href:
-            'https://amitysensei.com/imgs/page/about/amitysensei-top-kv-icon.jpg',
-          as: 'image',
-        },
+        // {
+        //   rel: 'preload',
+        //   href:
+        //     'https://amitysensei.com/imgs/page/about/amitysensei-top-kv-icon.jpg',
+        //   as: 'image',
+        // },
         {
           rel: 'preload',
           href:

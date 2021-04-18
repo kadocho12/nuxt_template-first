@@ -1,6 +1,5 @@
 <template>
   <article class="page page-news-nid">
-    nid
     <SectionNewsDetail :news="news" />
 
     <SectionNewsRecent :newses-recent="newsesRecent" />
@@ -11,16 +10,27 @@
 export default {
   data() {
     return {
-      news: {
-        content: {
-          rendered: '',
-        },
-        title: {
-          rendered: '',
-        },
-        date: '',
+      // news: {
+      //   img: {
+      //     img: '/imgs/page/news/_newsId/work-thumb.jpg',
+      //   },
+      //   content: {
+      //     rendered: '',
+      //   },
+      //   title: {
+      //     rendered: '',
+      //     text: '',
+      //   },
+      //   // date: '',
+      // },
+      newsesRecent: {
+        // content: {
+        //   rendered: '',
+        // },
+        // title: {
+        //   rendered: '',
+        // },
       },
-      newsesRecent: [],
     }
   },
 }

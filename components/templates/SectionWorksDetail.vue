@@ -3,13 +3,8 @@
     <div class="container">
       <figure class="work-fig">
         <picture class="work-fig-img">
-          <source
-            type="image/webp"
-            :srcset="work._embedded['wp:featuredmedia'][0].source_url + '.webp'"
-            loading="lazy"
-          />
           <img
-            :src="work._embedded['wp:featuredmedia'][0].source_url"
+            :src="work.source_url"
             :alt="`${work.title.rendered}のサムネイル画像`"
             loading="lazy"
           />
