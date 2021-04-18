@@ -12,7 +12,7 @@
 
     <NavFooter />
 
-    <!-- <Svgs /> -->
+    <Svgs />
   </div>
 </template>
 

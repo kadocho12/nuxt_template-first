@@ -5,18 +5,12 @@
       <div class="bg-img"></div>
     </div>
     <div class="container">
-      <img
-        id="kv-video"
-        class="video"
-        src="/imgs/page/top/amitysensei-top-kv-icon.jpg"
-        alt=""
-      />
-      <!-- <video id="kv-video" class="video" autoplay muted playsinline>
+      <video id="kv-video" class="video" autoplay muted playsinline>
         <source src="/imgs/page/top/amitysensei-top-kv-icon.mp4.webm" />
         <source src="/imgs/page/top/amitysensei-top-kv-icon.mp4" />
         <source src="/imgs/page/top/amitysensei-top-kv-icon.mov" />
         <p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
-      </video> -->
+      </video>
     </div>
   </section>
 </template>
@@ -24,17 +18,15 @@
 <script>
 export default {
   mounted() {
-    // const el = document.getElementById('kv')
-    // const children = el!.children
-    // el!.style.height = window.innerHeight + 'px'
-    // // @ts-ignore
-    // children.forEach((child: any) => {
-    //   child!.style.height = window.innerHeight + 'px'
-    // })
-    // setTimeout(() => {
-    //   // @ts-ignore
-    //   document.getElementById('kv-video').play()
-    // }, 240)
+    const el = document.getElementById('kv')
+    const children = el.children
+    el.style.height = window.innerHeight + 'px'
+    children.forEach((child) => {
+      child.style.height = window.innerHeight + 'px'
+    })
+    setTimeout(() => {
+      document.getElementById('kv-video').play()
+    }, 240)
   },
 }
 </script>

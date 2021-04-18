@@ -7,7 +7,7 @@
 
       <SectionTopWorks :works="works" />
 
-      <SectionTopSeminar :udemy="udemy" />
+      <!-- <SectionTopSeminar :udemy="udemy" /> -->
 
       <SectionTopChannels />
 
@@ -22,11 +22,14 @@ export default {
     return {
       newses: [
         {
+          text: '',
+          title: {
+            rendered: '',
+          },
           source_url: '/imgs/page/top/work-thumb.jpg',
-          text: 'あ',
         },
       ],
-      udemy: [],
+      // udemy: [],
       works: [
         // Book
         {

@@ -8,7 +8,9 @@
         rel="noopener noreferrer"
         class="sns-link"
       >
-        <img :src="s.icon" class="sns-icon" alt="" />
+        <svg viewBox="0 0 24 24" class="sns-icon">
+          <use :xlink:href="s.icon" />
+        </svg>
       </a>
     </li>
   </ul>
@@ -21,28 +23,28 @@ export default {
       snsList: [
         {
           label: 'YouTube',
-          icon: '/imgs/page/top/youtube.svg',
+          icon: '#i-youtube',
           href: 'https://www.youtube.com/channel/UCcXtyjK8wagT5LWS5bBgPPQ',
         },
         {
           label: 'Twitter',
-          icon: '/imgs/page/top/twitter.svg',
+          icon: '#i-twitter',
           href: 'https://twitter.com/amity_sensei',
         },
         {
           label: 'Instagram',
-          icon: '/imgs/page/top/instagram.svg',
+          icon: '#i-instagram',
           href: 'https://www.instagram.com/amity_sensei/',
         },
         {
           label: 'facebook',
-          icon: '/imgs/page/top/facebook.svg',
+          icon: '#i-facebook',
           href:
             'https://www.facebook.com/profile.php?id=113971883336522&ref=br_rs',
         },
         {
           label: 'note',
-          icon: '/imgs/page/top/note.svg',
+          icon: '#i-note',
           href: 'https://note.com/ipadmate',
         },
       ],

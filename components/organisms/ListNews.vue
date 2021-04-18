@@ -1,6 +1,6 @@
 <template>
   <ul class="list list-news-simple js-scroll">
-    <ListItemNews v-for="news in newses" :key="news.id" :news="newses" />
+    <ListItemNews v-for="news in newses" :key="news.id" :news="news" />
   </ul>
 </template>
 

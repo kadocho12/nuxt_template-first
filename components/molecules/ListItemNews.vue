@@ -2,7 +2,7 @@
   <li class="list-item list-item-news">
     <img :src="news.source_url" alt="" />
     <nuxt-link :to="`/news/${news.slug}/`" class="news-link">
-      <!-- <figure class="news-fig">
+      <figure class="news-fig">
         <picture class="news-fig-img">
           <source
             type="image/webp"
@@ -15,14 +15,14 @@
             loading="lazy"
           />
         </picture>
-      </figure> -->
+      </figure>
       <div class="news-info">
-        <!-- <h3 class="news-ttl font-500">
+        <h3 class="news-ttl font-500">
           {{ news.title.rendered }}
         </h3>
         <time class="news-time font-futura">
           {{ $dayjs(news.date).format('YYYY.MM.DD') }}
-        </time> -->
+        </time>
       </div>
     </nuxt-link>
   </li>
@@ -32,7 +32,7 @@
 export default {
   props: {
     news: {
-      type: Array,
+      type: Object,
       required: true,
     },
   },

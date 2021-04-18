@@ -24,6 +24,10 @@ export default {
     '~/components/atoms',
     '~/components/molecules',
     '~/components/organisms',
+    {
+      path: '~/components/Svgs.vue',
+      prefix: 'Svgs',
+    },
   ],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
