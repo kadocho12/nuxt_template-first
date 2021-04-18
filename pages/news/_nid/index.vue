@@ -10,27 +10,28 @@
 export default {
   data() {
     return {
-      // news: {
-      //   img: {
-      //     img: '/imgs/page/news/_newsId/work-thumb.jpg',
-      //   },
-      //   content: {
-      //     rendered: '',
-      //   },
-      //   title: {
-      //     rendered: '',
-      //     text: '',
-      //   },
-      //   // date: '',
-      // },
-      newsesRecent: {
-        // content: {
-        //   rendered: '',
-        // },
-        // title: {
-        //   rendered: '',
-        // },
+      news: {
+        img: {
+          img: '/imgs/page/top/work-thumb.jpg',
+        },
+        content: {
+          rendered: '',
+        },
+        title: {
+          rendered: '',
+          text: '',
+        },
+        // date: '',
       },
+      newsesRecent: [
+        {
+          text: '',
+          title: {
+            rendered: '',
+          },
+          source_url: '',
+        },
+      ],
     }
   },
 }

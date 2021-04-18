@@ -6,6 +6,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      works: [],
+    }
+  },
   head() {
     const title = 'WORKS | amity_sensei'
     // const desc = ''

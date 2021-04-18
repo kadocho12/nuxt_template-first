@@ -12,7 +12,7 @@
 export default {
   props: {
     newsesRecent: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
