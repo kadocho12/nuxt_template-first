@@ -1,14 +1,13 @@
 <template>
   <li class="list-item list-item-news">
-    <img :src="news.source_url" alt="" />
     <nuxt-link :to="`/news/${news.slug}/`" class="news-link">
       <figure class="news-fig">
         <picture class="news-fig-img">
-          <source
+          <!-- <source
             type="image/webp"
             :srcset="news.source_url + '.webp'"
             loading="lazy"
-          />
+          /> -->
           <img
             :src="news.source_url"
             :alt="news.title.rendered"

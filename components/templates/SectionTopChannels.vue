@@ -3,11 +3,11 @@
     <div class="container js-scroll">
       <figure class="ch-fig js-scroll">
         <picture class="ch-fig-img">
-          <source
+          <!-- <source
             type="image/webp"
             srcset="/imgs/page/top/amitysensei-top-kv-icon.jpg"
             loading="lazy"
-          />
+          /> -->
           <img
             src="/imgs/page/top/amitysensei-top-ch.jpg"
             alt="amity_senseiのYouTubeチャンネル"

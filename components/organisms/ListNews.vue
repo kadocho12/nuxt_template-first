@@ -132,14 +132,14 @@ export default {
   }
 
   &.list-last-md > .list-item:last-child {
-    display: none;
+    // display: none;
 
     @include mq(md) {
-      display: block;
+      // display: block;
     }
 
     @include mq(xs) {
-      display: none;
+      // display: none;
     }
   }
 }

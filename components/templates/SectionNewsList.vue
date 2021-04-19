@@ -3,19 +3,19 @@
     <div class="container">
       <h1 class="page-ttl">NEWS</h1>
       <h2 class="none">NEWS LIST</h2>
-      <!-- <ListNews
+      <ListNews
         :newses="
           newses.slice(
-            (Number(this.$route.query[query] || 1) - 1) * limit,
-            (Number(this.$route.query[query] || 1) - 1) * limit + limit
+            (Number($route.query[query] || 1) - 1) * limit,
+            (Number($route.query[query] || 1) - 1) * limit + limit
           )
         "
       />
       <ItemPagination
         :total-page="parseInt((newses.length + limit - 1) / limit)"
         :query="query"
-        :now="Number(this.$route.query[query] || 1)"
-      /> -->
+        :now="Number($route.query[query] || 1)"
+      />
     </div>
   </section>
 </template>

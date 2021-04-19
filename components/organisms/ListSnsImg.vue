@@ -10,11 +10,11 @@
       >
         <figure class="sns-pickup-fig">
           <picture class="sns-pickup-fig-img">
-            <source
+            <!-- <source
               type="image/webp"
               :srcset="s.img + '.webp'"
               loading="lazy"
-            />
+            /> -->
             <img :src="s.img" :alt="s.alt" loading="lazy" />
           </picture>
         </figure>

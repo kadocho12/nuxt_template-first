@@ -9,11 +9,11 @@
       >
         <figure class="ch-fig">
           <picture class="ch-fig-img">
-            <source
+            <!-- <source
               type="image/webp"
               :srcset="ch.img + '.webp'"
               loading="lazy"
-            />
+            /> -->
             <img :src="ch.img" :alt="`${ch.name}のアイコン`" loading="lazy" />
           </picture>
         </figure>
