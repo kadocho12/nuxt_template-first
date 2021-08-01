@@ -1,11 +1,7 @@
 <template>
   <button
-    v-bind="$attrs"
     class="button form-item-button txt-center font-500 font-futura"
-    @click="$emit('click')"
-  >
-    <slot>LABEL</slot>
-  </button>
+  ></button>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  // ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -37,7 +37,7 @@ export default {
     '@/assets/scss/app.scss',
   ],
   styleResources: {
-    scss: ['@/assets/scss/_colors.scss', '@/assets/scss/_variables.scss'],
+    scss: ['~/assets/scss/_colors.scss', '@/assets/scss/_variables.scss'],
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

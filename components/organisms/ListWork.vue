@@ -1,7 +1,5 @@
 <template>
-  <ul class="list list-work js-scroll">
-    <ListItemWork v-for="work in works" :key="work.id" :work="work" />
-  </ul>
+  <ul class="list list-work"></ul>
 </template>
 
 <script>
@@ -37,27 +35,6 @@ export default {
 
     @include mq(xs) {
       width: 50%;
-    }
-  }
-
-  &.js-scroll {
-    > .list-item {
-      opacity: 0;
-      transform: translate3d(0, 24px, 0);
-      transition: all 1.2s cubic-bezier(0, 0.55, 0.45, 1);
-
-      @for $i from 1 through 6 {
-        &:nth-child(#{$i}) {
-          transition-delay: $i * 0.24s;
-        }
-      }
-    }
-
-    &.js-scroll-active {
-      > .list-item {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
     }
   }
 }

@@ -1,30 +1,5 @@
 <template>
-  <li class="list-item list-item-news">
-    <nuxt-link :to="`/news/${news.slug}/`" class="news-link">
-      <figure class="news-fig">
-        <picture class="news-fig-img">
-          <!-- <source
-            type="image/webp"
-            :srcset="news.source_url + '.webp'"
-            loading="lazy"
-          /> -->
-          <img
-            :src="news.source_url"
-            :alt="news.title.rendered"
-            loading="lazy"
-          />
-        </picture>
-      </figure>
-      <div class="news-info">
-        <h3 class="news-ttl font-500">
-          {{ news.title.rendered }}
-        </h3>
-        <time class="news-time font-futura">
-          {{ $dayjs(news.date).format('YYYY.MM.DD') }}
-        </time>
-      </div>
-    </nuxt-link>
-  </li>
+  <li class="list-item list-item-news"></li>
 </template>
 
 <script>

@@ -1,10 +1,6 @@
 <template>
   <label class="form-item form-item-input">
-    <input
-      v-bind="$attrs"
-      class="input font-futura"
-      @input="$emit('input', $event.target.value)"
-    />
+    <input class="input font-futura" />
   </label>
 </template>
 

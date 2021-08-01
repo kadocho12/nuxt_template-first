@@ -1,23 +1,5 @@
 <template>
-  <section class="section section-news-list">
-    <div class="container">
-      <h1 class="page-ttl">NEWS</h1>
-      <h2 class="none">NEWS LIST</h2>
-      <ListNews
-        :newses="
-          newses.slice(
-            (Number($route.query[query] || 1) - 1) * limit,
-            (Number($route.query[query] || 1) - 1) * limit + limit
-          )
-        "
-      />
-      <ItemPagination
-        :total-page="parseInt((newses.length + limit - 1) / limit)"
-        :query="query"
-        :now="Number($route.query[query] || 1)"
-      />
-    </div>
-  </section>
+  <section class="section section-news-list"></section>
 </template>
 
 <script>

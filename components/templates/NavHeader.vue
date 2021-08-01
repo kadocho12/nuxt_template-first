@@ -1,16 +1,12 @@
 <template>
   <header v-bind="$attrs" class="nav nav-header no-max">
     <div class="container">
-      <nuxt-link aria-label="TOP" to="/" class="logo js-header-logo">
+      <nuxt-link to="/" class="logo">
         <svg viewBox="0 0 166 56" class="logo-img">
           <use xlink:href="#i-logo" />
         </svg>
       </nuxt-link>
-      <button
-        aria-label="hamburger menu"
-        class="menu"
-        @click="$emit('clickMenu')"
-      />
+      <button class="menu" @click="$emit('clickMenu')" />
     </div>
   </header>
 </template>

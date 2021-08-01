@@ -1,11 +1,5 @@
 <template>
-  <label class="form-item form-item-textarea">
-    <textarea
-      v-bind="$attrs"
-      class="textarea font-futura"
-      @input="$emit('input', $event.target.value)"
-    />
-  </label>
+  <label class="form-item form-item-textarea"> </label>
 </template>
 
 <script>

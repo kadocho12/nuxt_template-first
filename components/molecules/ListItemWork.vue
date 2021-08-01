@@ -1,36 +1,5 @@
 <template>
-  <li class="list-item list-item-work">
-    <nuxt-link :to="`/works/${work.slug}/`" class="work-link">
-      <figure class="work-fig">
-        <picture class="work-fig-img">
-          <source
-            type="image/webp"
-            :srcset="work._embedded['wp:featuredmedia'][0].source_url + '.webp'"
-            loading="lazy"
-          />
-          <img
-            :src="work._embedded['wp:featuredmedia'][0].source_url"
-            :alt="work.title.rendered"
-            loading="lazy"
-          />
-        </picture>
-      </figure>
-      <div class="work-info">
-        <div class="work-info-cont">
-          <time class="work-time font-futura">
-            {{ $dayjs(work.date).format('YYYY.MM.DD') }}
-          </time>
-          <h3 class="work-ttl font-500">
-            {{ work.title.rendered }}
-          </h3>
-          <hr class="work-hr" />
-          <p class="work-client">
-            {{ work.acf.client }}
-          </p>
-        </div>
-      </div>
-    </nuxt-link>
-  </li>
+  <li class="list-item list-item-work"></li>
 </template>
 
 <script>

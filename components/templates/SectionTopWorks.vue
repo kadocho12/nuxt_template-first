@@ -1,11 +1,5 @@
 <template>
-  <section class="section section-top-works">
-    <div class="container js-scroll">
-      <h2 class="works-ttl">WORKS</h2>
-      <ListWork :works="works" />
-      <ButtonLink to="/works/"> ALL WORKS </ButtonLink>
-    </div>
-  </section>
+  <section class="section section-top-works"></section>
 </template>
 
 <script>
@@ -54,17 +48,6 @@ export default {
 
       @include mq(sm) {
         margin-top: 24px;
-      }
-    }
-
-    &.js-scroll {
-      opacity: 0;
-      transform: translate3d(0, 24px, 0);
-      transition: all 2.8s cubic-bezier(0, 0.55, 0.45, 1);
-
-      &.js-scroll-active {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
       }
     }
   }

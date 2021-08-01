@@ -1,42 +1,5 @@
 <template>
-  <li class="list-item list-item-udemy">
-    <a
-      :href="udemy.acf.link"
-      class="udemy-link"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <figure class="udemy-fig">
-        <picture class="udemy-fig-img">
-          <source
-            type="image/webp"
-            :srcset="
-              udemy._embedded['wp:featuredmedia'][0].source_url + '.webp'
-            "
-            loading="lazy"
-          />
-          <img
-            :src="udemy._embedded['wp:featuredmedia'][0].source_url"
-            :alt="udemy.title.rendered"
-            loading="lazy"
-          />
-        </picture>
-      </figure>
-      <div class="udemy-info">
-        <div class="udemy-info-cont">
-          <p class="udemy-app">
-            {{ udemy.acf.app }}
-          </p>
-          <h3 class="udemy-ttl font-500">
-            {{ udemy.title.rendered }}
-          </h3>
-          <p class="udemy-teacher">
-            {{ udemy.acf.teacher }}
-          </p>
-        </div>
-      </div>
-    </a>
-  </li>
+  <li class="list-item list-item-udemy"></li>
 </template>
 
 <script>

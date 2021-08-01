@@ -1,48 +1,5 @@
 <template>
-  <footer class="nav nav-footer">
-    <div class="container">
-      <nav class="pages">
-        <nuxt-link to="/" class="page font-500 font-futura"> TOP </nuxt-link>
-        <nuxt-link to="/about/" class="page font-500 font-futura">
-          ABOUT
-        </nuxt-link>
-        <nuxt-link to="/news/" class="page font-500 font-futura">
-          NEWS
-        </nuxt-link>
-        <nuxt-link to="/works/" class="page font-500 font-futura">
-          WORKS
-        </nuxt-link>
-        <nuxt-link to="/seminar/" class="page font-500 font-futura">
-          SEMINAR
-        </nuxt-link>
-        <nuxt-link to="/contact/" class="page font-500 font-futura">
-          CONTACT
-        </nuxt-link>
-        <a
-          href="https://amity-sensei.stores.jp/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="page font-500 font-futura"
-        >
-          SHOP
-        </a>
-        <!-- <nuxt-link to="#" class="page font-500 font-futura">
-          PRIVACY POLICY
-        </nuxt-link> -->
-      </nav>
-
-      <div class="sns-mail">
-        <ListSns />
-        <a href="mailto:info@honey-at.co" class="mail font-500">
-          pr@amitysensei.com
-        </a>
-      </div>
-
-      <p class="copyright txt-center font-500">
-        ©︎2021 amity_sensei | olio inc.
-      </p>
-    </div>
-  </footer>
+  <footer class="nav nav-footer"></footer>
 </template>
 
 <script>
@@ -125,6 +82,7 @@ export default {}
     > .copyright {
       width: 100%;
       margin-top: 40px;
+      text-align: center;
 
       @include mq(xs) {
         margin-top: 32px;

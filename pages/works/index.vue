@@ -1,70 +1,99 @@
 <template>
-  <article class="page page-works">
-    <SectionWorksList :works="works" />
-  </article>
+  <article class="page page-works"></article>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      works: [],
-    }
-  },
-  head() {
-    const title = 'WORKS | amity_sensei'
-    // const desc = ''
-    // const thumb = '/ogp.png'
-
-    return {
-      title,
-      meta: [
-        // {
-        //   hid: 'description',
-        //   name: 'description',
-        //   content: desc,
-        // },
-        // {
-        //   hid: 'og:image',
-        //   property: 'og:image',
-        //   content: thumb,
-        // },
+      works: [
         {
-          hid: 'og:title',
-          property: 'og:title',
-          content: title,
-        },
-        // {
-        //   hid: 'og:description',
-        //   property: 'og:description',
-        //   content: desc,
-        // },
-        {
-          hid: 'og:type',
-          property: 'og:type',
-          content: 'article',
+          text: '',
+          title: {
+            rendered: '書籍 iPadクリエイティブ',
+          },
+          source_url: '/imgs/page/top/work-thumb.jpg',
+          acf: {
+            client: 'KADOKOKAWA',
+          },
+          date: '2020.12.01',
         },
         {
-          hid: 'og:url',
-          property: 'og:url',
-          content: 'https://amitysensei.com/works/',
+          text: '',
+          title: {
+            rendered: '書籍 iPadクリエイティブ',
+          },
+          source_url: '/imgs/page/top/work-thumb.jpg',
+          acf: {
+            client: 'KADOKOKAWA',
+          },
+          date: '2020.12.01',
         },
         {
-          hid: 'twitter:card',
-          property: 'twitter:card',
-          content: 'summary_large_image',
+          text: '',
+          title: {
+            rendered: '書籍 iPadクリエイティブ',
+          },
+          source_url: '/imgs/page/top/work-thumb.jpg',
+          acf: {
+            client: 'KADOKOKAWA',
+          },
+          date: '2020.12.01',
         },
         {
-          hid: 'twitter:title',
-          property: 'twitter:title',
-          content: title,
+          text: '',
+          title: {
+            rendered: '書籍 iPadクリエイティブ',
+          },
+          source_url: '/imgs/page/top/work-thumb.jpg',
+          acf: {
+            client: 'KADOKOKAWA',
+          },
+          date: '2020.12.01',
         },
-      ],
-      link: [
         {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://amitysensei.com/works/',
+          text: '',
+          title: {
+            rendered: '書籍 iPadクリエイティブ',
+          },
+          source_url: '/imgs/page/top/work-thumb.jpg',
+          acf: {
+            client: 'KADOKOKAWA',
+          },
+          date: '2020.12.01',
+        },
+        {
+          text: '',
+          title: {
+            rendered: '書籍 iPadクリエイティブ',
+          },
+          source_url: '/imgs/page/top/work-thumb.jpg',
+          acf: {
+            client: 'KADOKOKAWA',
+          },
+          date: '2020.12.01',
+        },
+        {
+          text: '',
+          title: {
+            rendered: '書籍 iPadクリエイティブ',
+          },
+          source_url: '/imgs/page/top/work-thumb.jpg',
+          acf: {
+            client: 'KADOKOKAWA',
+          },
+          date: '2020.12.01',
+        },
+        {
+          text: '',
+          title: {
+            rendered: '書籍 iPadクリエイティブ',
+          },
+          source_url: '/imgs/page/top/work-thumb.jpg',
+          acf: {
+            client: 'KADOKOKAWA',
+          },
+          date: '2020.12.01',
         },
       ],
     }

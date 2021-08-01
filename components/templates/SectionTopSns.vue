@@ -1,34 +1,5 @@
 <template>
-  <div class="section section-top-sns">
-    <div class="container">
-      <section class="sns sns-insta">
-        <div class="container js-scroll">
-          <h2 aria-label="instagram" class="sns-ttl txt-center">
-            <svg viewBox="0 0 24 24" class="sns-icon">
-              <use xlink:href="#i-instagram" />
-            </svg>
-          </h2>
-          <ListSnsImg :sns="instagram" />
-          <ButtonLinkBlank href="https://www.instagram.com/amity_sensei/">
-            INSTAGRAM
-          </ButtonLinkBlank>
-        </div>
-      </section>
-      <section class="sns sns-shop">
-        <div class="container js-scroll">
-          <h2 aria-label="shop" class="sns-ttl txt-center">
-            <svg viewBox="0 0 24 24" class="sns-icon">
-              <use xlink:href="#i-shop" />
-            </svg>
-          </h2>
-          <ListSnsImg :sns="shop" />
-          <ButtonLinkBlank href="https://amity-sensei.stores.jp/">
-            SHOP MORE
-          </ButtonLinkBlank>
-        </div>
-      </section>
-    </div>
-  </div>
+  <div class="section section-top-sns"></div>
 </template>
 
 <script>
@@ -207,17 +178,6 @@ export default {
         > .button {
           max-width: 200px;
           margin: 32px auto 0;
-        }
-
-        &.js-scroll {
-          opacity: 0;
-          transform: translate3d(0, 24px, 0);
-          transition: all 2.8s cubic-bezier(0, 0.55, 0.45, 1);
-
-          &.js-scroll-active {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
-          }
         }
       }
 

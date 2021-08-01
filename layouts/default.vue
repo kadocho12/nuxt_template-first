@@ -26,39 +26,9 @@ export default {
   watch: {
     $route() {
       this.isMenu = false
-
-      setTimeout(() => {
-        this.checkScroll()
-      }, 880)
     },
-  },
-  mounted() {
-    window.addEventListener('scroll', this.checkScroll)
-    this.checkScroll()
-    setTimeout(() => {
-      this.checkScroll()
-    }, 640)
   },
   methods: {
-    checkScroll() {
-      const actionHight = (window.innerHeight * 7) / 9
-
-      for (
-        let i = 0;
-        i < document.getElementsByClassName('js-scroll').length;
-        i++
-      ) {
-        if (
-          document
-            .getElementsByClassName('js-scroll')
-            [i].getBoundingClientRect().top < actionHight
-        ) {
-          document
-            .getElementsByClassName('js-scroll')
-            [i].classList.add('js-scroll-active')
-        }
-      }
-    },
     clickMenu() {
       this.isMenu = !this.isMenu
     },

@@ -1,22 +1,5 @@
 <template>
-  <div class="section section-top-about-news">
-    <div class="container js-scroll">
-      <section class="prof">
-        <ContentProfSimple />
-      </section>
-
-      <section class="news">
-        <div class="container">
-          <h2 class="news-ttl">NEWS</h2>
-          <ListNews
-            :newses="newses"
-            class="list-first list-default-md list-last-md"
-          />
-          <ButtonLink to="/news/"> ALL NEWS </ButtonLink>
-        </div>
-      </section>
-    </div>
-  </div>
+  <div class="section section-top-about-news"></div>
 </template>
 
 <script>
@@ -32,6 +15,8 @@ export default {
 
 <style lang="scss" scoped>
 .section-top-about-news {
+  background: #fff;
+
   > .container {
     display: flex;
     justify-content: space-between;
@@ -121,27 +106,6 @@ export default {
           @include mq(xxs) {
             margin-top: 24px;
           }
-        }
-      }
-    }
-
-    &.js-scroll {
-      > .prof,
-      > .news {
-        opacity: 0;
-        transform: translate3d(0, 24px, 0);
-        transition: all 2.8s cubic-bezier(0, 0.55, 0.45, 1);
-      }
-
-      > .news {
-        transition-delay: 0.08s;
-      }
-
-      &.js-scroll-active {
-        > .prof,
-        > .news {
-          opacity: 1;
-          transform: translate3d(0, 0, 0);
         }
       }
     }

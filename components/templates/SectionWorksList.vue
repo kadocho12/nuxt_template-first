@@ -1,23 +1,5 @@
 <template>
-  <section class="section section-works-list">
-    <div class="container">
-      <h1 class="page-ttl">WORKS</h1>
-      <h2 class="none">WORKS LIST</h2>
-      <!-- <ListWork
-        :works="
-          works.slice(
-            (Number(this.$route.query[query] || 1) - 1) * limit,
-            (Number(this.$route.query[query] || 1) - 1) * limit + limit
-          )
-        "
-      />
-      <ItemPagination
-        :total-page="parseInt((works.length + limit - 1) / limit)"
-        :query="query"
-        :now="Number(this.$route.query[query] || 1)"
-      /> -->
-    </div>
-  </section>
+  <section class="section section-works-list"></section>
 </template>
 
 <script>

@@ -1,9 +1,5 @@
 <template>
-  <nuxt-link
-    v-bind="$attrs"
-    class="button button-link txt-center font-500 font-futura"
-  >
-    <slot>LABEL</slot>
+  <nuxt-link class="button button-link txt-center font-500 font-futura">
   </nuxt-link>
 </template>
 

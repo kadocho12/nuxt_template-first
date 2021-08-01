@@ -2,47 +2,25 @@
   <aside class="nav nav-menu">
     <div class="container">
       <nav class="pages" @click="$emit('clickCloseMenu')">
-        <nuxt-link to="/" class="page font-futura">
+        <nuxt-link to="/" class="page">
           <span class="page-txt">TOP</span>
         </nuxt-link>
-        <nuxt-link to="/about/" class="page font-futura">
+        <nuxt-link to="/about" class="page">
           <span class="page-txt">ABOUT</span>
         </nuxt-link>
-        <nuxt-link
-          to="/news/"
-          :class="{
-            'page-active': $route.name === 'news' || $route.name === 'news-nid',
-          }"
-          class="page font-futura"
-        >
+        <nuxt-link to="/news" class="page">
           <span class="page-txt">NEWS</span>
         </nuxt-link>
-        <nuxt-link
-          to="/works/"
-          :class="{
-            'page-active':
-              $route.name === 'works' || $route.name === 'works-wid',
-          }"
-          class="page font-futura"
-        >
+        <nuxt-link to="/works" class="page">
           <span class="page-txt">WORKS</span>
         </nuxt-link>
-        <nuxt-link to="/seminar/" class="page font-futura">
-          <span class="page-txt">SEMINAR</span>
-        </nuxt-link>
-        <nuxt-link to="/contact/" class="page font-futura">
+        <nuxt-link to="/contact" class="page">
           <span class="page-txt">CONTACT</span>
         </nuxt-link>
-        <a
-          href="https://amity-sensei.stores.jp/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="page font-futura"
-        >
+        <a href="https://amity-sensei.stores.jp/" target="_blank" class="page">
           <span class="page-txt">SHOP</span>
         </a>
       </nav>
-
       <ListSns />
     </div>
   </aside>

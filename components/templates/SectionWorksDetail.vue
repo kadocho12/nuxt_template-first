@@ -1,27 +1,5 @@
 <template>
-  <section class="section section-work-detail">
-    <div class="container">
-      <figure class="work-fig">
-        <picture class="work-fig-img">
-          <img
-            :src="work.source_url"
-            :alt="`${work.title.rendered}のサムネイル画像`"
-            loading="lazy"
-          />
-        </picture>
-      </figure>
-      <time class="work-time font-futura inline-block">
-        {{ $dayjs(work.date).format('YYYY.MM.DD') }}
-      </time>
-      <h1 class="work-ttl section-ttl">
-        {{ work.title.rendered }}
-      </h1>
-      <p class="work-client font-500">
-        {{ work.acf.client }}
-      </p>
-      <ContentArticle :article="work.content.rendered" />
-    </div>
-  </section>
+  <section class="section section-work-detail"></section>
 </template>
 
 <script>

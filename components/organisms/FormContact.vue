@@ -1,69 +1,5 @@
 <template>
-  <form
-    class="form form-contact"
-    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNT5Ym20DqnoiWaeO7oYfnyxnvj0yokVyet1_-lU5ABETXww/formResponse"
-    target="hideResult"
-  >
-    <!--
-      @submit.prevent.once="submitForm()"
-     -->
-    <FormItemInput
-      v-model="form.name"
-      aria-label="Name"
-      placeholder="Name*"
-      name="entry.841138565"
-      required
-    />
-    <FormItemInput
-      v-model="form.email"
-      aria-label="Email"
-      type="email"
-      placeholder="Email*"
-      name="entry.691828837"
-      required
-    />
-    <FormItemInput
-      v-model="form.tel"
-      aria-label="Phone Number"
-      type="tel"
-      placeholder="Phone Number"
-      name="entry.285746427"
-    />
-    <FormItemInput
-      v-model="form.title"
-      aria-label="Title"
-      placeholder="Title"
-      name="entry.1035962874"
-    />
-    <FormItemTextarea
-      v-model="form.message"
-      aria-label="Message"
-      placeholder="Message*"
-      name="entry.1263499542"
-      required
-    />
-    <div class="btn">
-      <div v-show="isSending" class="loader">
-        <div class="loader-dot"></div>
-        <div class="loader-dot"></div>
-        <div class="loader-dot"></div>
-      </div>
-      <FormItemButton
-        type="submit"
-        :disabled="status === 'success'"
-        @click="submitForm()"
-      >
-        <!-- @click.once="submitForm()" -->
-        SUBMIT
-      </FormItemButton>
-    </div>
-    <div v-show="status" class="msg txt-right">
-      <p v-if="status === 'success'" class="msg-txt">Thanks!</p>
-      <p v-if="status === 'error'" class="msg-txt">
-        エラーが発生しました。もう一度送信してください。
-      </p>
-    </div>
-  </form>
+  <form class="form form-contact" target="hideResult"></form>
 </template>
 
 <script>
@@ -98,27 +34,27 @@ export default {
       if (this.form.name && this.form.email && this.form.message) {
         this.isSending = true
 
-        // const submitParams = new FormData()
-        //
-        // Object.keys(this.form).forEach((key) => {
-        //   // @ts-ignore
-        //   submitParams.append(this.formInfo[key], this.form[key])
-        // })
-        //
-        // const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
-        // const GOOGLE_FORM_ACTION = this.formInfo.action
-        //
-        // this.$axios
-        //   .post(CORS_PROXY + GOOGLE_FORM_ACTION, submitParams)
-        //   .then(() => {
-        //     this.isSending = false
-        //     this.status = 'success'
-        //   })
-        //   .catch((e) => {
-        //     console.warn(e) // eslint-disable-line
-        //     this.isSending = false
-        //     this.status = 'error'
-        //   })
+        const submitParams = new FormData()
+
+        Object.keys(this.form).forEach((key) => {
+          // @ts-ignore
+          submitParams.append(this.formInfo[key], this.form[key])
+        })
+
+        const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+        const GOOGLE_FORM_ACTION = this.formInfo.action
+
+        this.$axios
+          .post(CORS_PROXY + GOOGLE_FORM_ACTION, submitParams)
+          .then(() => {
+            this.isSending = false
+            this.status = 'success'
+          })
+          .catch((e) => {
+            console.warn(e) // eslint-disable-line
+            this.isSending = false
+            this.status = 'error'
+          })
 
         setTimeout(() => {
           this.isSending = false

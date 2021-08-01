@@ -1,24 +1,5 @@
 <template>
-  <section class="section section-news-detail">
-    <div class="container">
-      <figure class="news-fig">
-        <picture class="news-fig-img">
-          <img
-            :src="news.img.img"
-            :alt="`${news.title.rendered}のサムネイル画像`"
-            loading="lazy"
-          />
-        </picture>
-      </figure>
-      <time class="news-time font-futura inline-block">
-        {{ $dayjs(news.date).format('YYYY.MM.DD') }}
-      </time>
-      <h1 class="news-ttl section-ttl">
-        {{ news.title.rendered }}
-      </h1>
-      <ContentArticle :article="news.content.rendered" />
-    </div>
-  </section>
+  <section class="section section-news-detail"></section>
 </template>
 
 <script>
@@ -52,21 +33,21 @@ export default {
 
     > .news-time {
       width: 100%;
-      margin-top: 64px;
+      // margin-top: 64px;
       line-height: 1.2em;
       color: var(--color-font-gray);
 
       @include mq(sm) {
-        margin-top: 40px;
+        // margin-top: 40px;
       }
     }
 
     > .news-ttl {
-      margin-top: 4px;
+      margin-top: 64px;
       letter-spacing: 0;
 
       @include mq(sm) {
-        margin-top: 0;
+        margin-top: 32px;
         font-size: 20px;
       }
     }

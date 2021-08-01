@@ -1,46 +1,5 @@
 <template>
-  <section class="section section-about-profile">
-    <div class="container">
-      <h1 class="page-ttl">ABOUT</h1>
-      <figure class="prof-fig">
-        <picture class="prof-fig-img">
-          <source
-            type="image/webp"
-            srcset="/imgs/page/about/amitysensei-top-kv-icon.jpg"
-          />
-          <img
-            src="/imgs/page/about/amitysensei-about-prof.jpg"
-            alt="amity_senseiのプロフィールの画像"
-          />
-        </picture>
-      </figure>
-      <h2 class="prof-nm section-ttl">amity_sensei</h2>
-      <p class="prof-position">
-        アートディレクター / iPad YouTuber / olio.inc CEO
-      </p>
-      <hr class="prof-hr" />
-      <p class="prof-bio prof-bio-ja">
-        1993年京都生まれ。イギリスの美術大学にてデジタル&テクノロジーアートを学び、iPadでのデザイン制作活動を開始。学生のかたわら、ロンドンの日本人No.1ブロガーとしても活動。<br />
-        帰国後、2017年に外資系広告代理店に入社。その後、Adobe MAX JAPAN 2018
-        スピーカー出演やYouTubeチャンネル開設を機に2019年に独立、株式会社olioを設立。<br />
-        オンラインサロン「iPadmate」の運営を経て、現在はiPadセミナー講師など、クリエイターや企業の働き方を変えるワークデザインやコンサル業を行っている。著書「iPadクリエイティブ」好評発売中。
-      </p>
-      <p class="prof-bio prof-bio-en">
-        Born in Kyoto in 1993. Started designing her works using an iPad after
-        studying Digital and Technological Art at an art school in England.<br />
-        She was also known as the No.1 Japanese blogger in London while she was
-        a student.<br />
-        Upon returning to Japan, she joined a foreign advertising agency in
-        2017. Soon after appearing as a speaker at Adobe MAX JAPAN 2018 and
-        starting her YouTube channel amity_sensei, she established her company
-        olio Inc. in 2019.<br />
-        Having run her online community ‘iPadmate’, she currently works as a
-        lecturer mainly running iPad seminars and also offers work design and
-        consulting services that help creators and companies change their work
-        style. Her book "iPad Creative" is now available!
-      </p>
-    </div>
-  </section>
+  <section class="section section-about-profile"></section>
 </template>
 
 <script>

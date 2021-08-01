@@ -1,15 +1,9 @@
 <template>
   <ul class="list list-sns">
     <li v-for="s in snsList" :key="s.icon" class="sns">
-      <a
-        :aria-label="s.label"
-        :href="s.href"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="sns-link"
-      >
+      <a :href="s.href" target="_blank" class="sns-link">
         <svg viewBox="0 0 24 24" class="sns-icon">
-          <use :xlink:href="s.icon" />
+          <use xlink:href="s.icon" />
         </svg>
       </a>
     </li>

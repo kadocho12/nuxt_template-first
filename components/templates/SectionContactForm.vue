@@ -1,14 +1,5 @@
 <template>
-  <section class="section section-contact-form page">
-    <div class="bg bg-cover">
-      <div class="bg-img"></div>
-    </div>
-    <div class="container">
-      <h1 class="page-ttl">CONTACT</h1>
-      <FormContact />
-      <iframe name="hideResult" style="display: none"></iframe>
-    </div>
-  </section>
+  <section class="section section-contact-form page"></section>
 </template>
 
 <script>

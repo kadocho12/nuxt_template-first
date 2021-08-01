@@ -1,12 +1,5 @@
 <template>
-  <a
-    v-bind="$attrs"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="button button-link-blank txt-center font-500 font-futura"
-  >
-    <slot>LABEL</slot>
-  </a>
+  <a class="button button-link-blank txt-center font-500 font-futura"> </a>
 </template>
 
 <script>

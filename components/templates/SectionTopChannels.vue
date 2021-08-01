@@ -1,30 +1,5 @@
 <template>
-  <section class="section section-top-channels">
-    <div class="container js-scroll">
-      <figure class="ch-fig js-scroll">
-        <picture class="ch-fig-img">
-          <!-- <source
-            type="image/webp"
-            srcset="/imgs/page/top/amitysensei-top-kv-icon.jpg"
-            loading="lazy"
-          /> -->
-          <img
-            src="/imgs/page/top/amitysensei-top-ch.jpg"
-            alt="amity_senseiのYouTubeチャンネル"
-            loading="lazy"
-          />
-        </picture>
-      </figure>
-      <div class="ch-txts">
-        <h2 class="ch-ttl">CHANNELS</h2>
-        <p class="ch-txt">
-          現在、3つのYouTubeチャンネルを運営しています。主にiPadのクリエイティブな使い方を発信しているメインのチャンネルは、2019年12月に開設後、半年ほどで登録者10万人を超えました。そして現在は、ありがたいことに登録者25万人目前です。<br />
-          その他に、メインチャンネルの英語版とiPhoneの使い方やガジェット紹介のサブチャンネルも運営中です。ぜひチェックしてみてください！
-        </p>
-        <ListChannel />
-      </div>
-    </div>
-  </section>
+  <section class="section section-top-channels"></section>
 </template>
 
 <script>
@@ -51,12 +26,12 @@ export default {}
       overflow: hidden;
 
       &.js-scroll {
-        opacity: 0;
+        // opacity: 0;
         transform: translate3d(0, 24px, 0);
         transition: all 2.8s cubic-bezier(0, 0.55, 0.45, 1);
 
         &.js-scroll-active {
-          opacity: 1;
+          // opacity: 1;
           transform: translate3d(0, 0, 0);
         }
       }
@@ -118,19 +93,18 @@ export default {}
         }
 
         @include mq(xxs) {
-          max-width: 288px;
+          // max-width: 288px;
           margin: 240px auto 0;
         }
       }
     }
-
     &.js-scroll {
-      opacity: 0;
+      // opacity: 0;
       transform: translate3d(0, 24px, 0);
       transition: all 2.8s cubic-bezier(0, 0.55, 0.45, 1);
 
       &.js-scroll-active {
-        opacity: 1;
+        // opacity: 1;
         transform: translate3d(0, 0, 0);
       }
     }

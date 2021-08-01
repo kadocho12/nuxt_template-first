@@ -1,7 +1,5 @@
 <template>
-  <ul class="list list-news-simple js-scroll">
-    <ListItemNews v-for="news in newses" :key="news.id" :news="news" />
-  </ul>
+  <ul class="list list-news-simple"></ul>
 </template>
 
 <script>
@@ -102,27 +100,6 @@ export default {
         width: 100%;
         padding: 0;
         border-top: 1px solid var(--color-stroke-gray-light);
-      }
-    }
-  }
-
-  &.js-scroll {
-    > .list-item {
-      opacity: 0;
-      transform: translate3d(0, 24px, 0);
-      transition: all 2.8s cubic-bezier(0, 0.55, 0.45, 1);
-
-      @for $i from 1 through 12 {
-        &:nth-child(#{$i}) {
-          transition-delay: $i * 0.24s;
-        }
-      }
-    }
-
-    &.js-scroll-active {
-      > .list-item {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
       }
     }
   }

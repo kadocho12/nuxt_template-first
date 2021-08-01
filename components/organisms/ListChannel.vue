@@ -1,29 +1,5 @@
 <template>
-  <ul class="list list-channel js-scroll">
-    <li v-for="ch in channels" :key="ch.name" class="list-item">
-      <a
-        :href="ch.href"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="ch-link"
-      >
-        <figure class="ch-fig">
-          <picture class="ch-fig-img">
-            <!-- <source
-              type="image/webp"
-              :srcset="ch.img + '.webp'"
-              loading="lazy"
-            /> -->
-            <img :src="ch.img" :alt="`${ch.name}のアイコン`" loading="lazy" />
-          </picture>
-        </figure>
-        <div class="ch-info">
-          <p class="ch-nm font-500">{{ ch.name }}</p>
-          <p class="ch-bio">{{ ch.bio }}</p>
-        </div>
-      </a>
-    </li>
-  </ul>
+  <ul class="list list-channel"></ul>
 </template>
 
 <script>
@@ -76,7 +52,7 @@ export default {
 
       > .ch-fig {
         position: relative;
-        display: flex;
+        // display: flex;
         width: 80px;
         border-radius: 50%;
         overflow: hidden;
@@ -131,27 +107,6 @@ export default {
             transform: scale(1.12);
           }
         }
-      }
-    }
-  }
-
-  &.js-scroll {
-    > .list-item {
-      opacity: 0;
-      transform: translate3d(0, 24px, 0);
-      transition: all 1.2s cubic-bezier(0, 0.55, 0.45, 1);
-
-      @for $i from 1 through 3 {
-        &:nth-child(#{$i}) {
-          transition-delay: $i * 0.24s;
-        }
-      }
-    }
-
-    &.js-scroll-active {
-      > .list-item {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
       }
     }
   }

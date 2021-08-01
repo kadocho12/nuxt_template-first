@@ -1,38 +1,5 @@
 <template>
-  <section class="section section-about-career">
-    <div class="container js-scroll">
-      <h2 class="career-ttl section-ttl">CAREER</h2>
-      <div class="career-history">
-        <div class="career-history-items">
-          <p
-            v-for="(h, i) in history"
-            :key="i"
-            class="career-history-item txt-justify"
-          >
-            {{ h.time }}&nbsp;&nbsp;{{ h.text }}
-          </p>
-        </div>
-        <figure class="career-history-fig career-history-fig-1">
-          <picture class="career-history-fig-img js-scroll">
-            <img
-              src="/imgs/page/about/amitysensei-about-career-1.jpg"
-              alt="amity_senseiの画像１"
-              loading="lazy"
-            />
-          </picture>
-        </figure>
-        <figure class="career-history-fig career-history-fig-2">
-          <picture class="career-history-fig-img js-scroll">
-            <img
-              src="/imgs/page/about/amitysensei-about-career-2.jpg"
-              alt="amity_senseiの画像２"
-              loading="lazy"
-            />
-          </picture>
-        </figure>
-      </div>
-    </div>
-  </section>
+  <section class="section section-about-career"></section>
 </template>
 
 <script>
@@ -127,12 +94,12 @@ export default {
           left: 0;
 
           &.js-scroll {
-            opacity: 0;
+            // opacity: 0;
             transform: translate3d(0, 24px, 0);
             transition: all 2.8s cubic-bezier(0, 0.55, 0.45, 1);
 
             &.js-scroll-active {
-              opacity: 1;
+              // opacity: 1;
               transform: translate3d(0, 0, 0);
             }
           }
@@ -157,7 +124,7 @@ export default {
         }
 
         &.career-history-fig-2 {
-          margin-bottom: -40px;
+          margin-bottom: 40px;
           z-index: -1;
 
           @include mq(xs) {
@@ -174,14 +141,13 @@ export default {
         }
       }
     }
-
     &.js-scroll {
-      opacity: 0;
+      // opacity: 0;
       transform: translate3d(0, 24px, 0);
       transition: all 2.8s cubic-bezier(0, 0.55, 0.45, 1);
 
       &.js-scroll-active {
-        opacity: 1;
+        // opacity: 1;
         transform: translate3d(0, 0, 0);
       }
     }

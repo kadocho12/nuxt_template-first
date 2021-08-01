@@ -1,31 +1,5 @@
 <template>
-  <div class="content content-prof-simple">
-    <figure class="prof-fig">
-      <picture class="prof-fig-img">
-        <!-- <source
-          type="image/webp"
-          srcset="/imgs/amitysensei-top-kv-icon.jpg
-          loading="lazy"
-        /> -->
-        <img
-          src="/imgs/amitysensei-icon.jpg"
-          alt="amity_sensei"
-          loading="lazy"
-        />
-      </picture>
-    </figure>
-    <h2 class="prof-nm txt-center section-ttl">amity_sensei</h2>
-    <p class="prof-position txt-center">
-      アートディレクター / iPad YouTuber / olio.inc CEO
-    </p>
-    <p class="prof-bio txt-justify">
-      iPadをクリエイティブに使う方法を発信する登録者25万人超えのYouTubeチャンネルを運営中。クリエイターや企業の働き方を変えるワークデザインやコンサル業・セミナー講師なども行っている。書籍「iPadクリエイティブ」発売中。
-    </p>
-    <div class="sns-more">
-      <ListSns class="icon-large" />
-      <ButtonLink to="/about/"> ABOUT </ButtonLink>
-    </div>
-  </div>
+  <div class="content content-prof-simple"></div>
 </template>
 
 <script>
